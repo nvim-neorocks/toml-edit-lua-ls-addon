@@ -23,12 +23,12 @@ function toml_edit.parse_spanned(toml_str) end
 ---
 ---`path`: A path to an object, e.g. { "foo", "bar" } -> [foo.bar]
 ---`selector`: What to select from the given `path`.
----            A `"name"`, a "value", or a `number` can be given
+---            A `"key"`, a "value", or a `number` can be given
 ---            to select an element from an array via an index.
 ---@field span_of fun(path: string[], selector: toml-edit.SpannedToml.Selector):(toml-edit.Range | nil)
 
 ---@alias toml-edit.SpannedToml.Selector
----|"name"
+---|"key"
 ---|"value"
 ---|number
 
